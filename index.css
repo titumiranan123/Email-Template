@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+main {
+    background-color: #f4f4f4;
+}
+
+/* header section */
+
+header {
+    background-image: url(./Email-Newsletter/sunset-pool.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 400px;
+
+    padding: 0 30px;
+}
+
+/* about */
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 20px 20px;
+}
+
+/* card desing css */
+
+.card {
+    width: 300px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.card-content p {
+    margin-bottom: 10px;
+}
+
+/* all button style */
+.btn {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #0088cc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #006699;
+}
+
+/* book in advance button */
+.book-div {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+
+}
+
+.book-btn {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #0088cc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    width: 80%;
+    font-weight: 00;
+}
+
+/* room section style */
+
+.rooms-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.rooms-header span {
+    border: 1px solid gray;
+    width: 450px;
+}
+
+
+
+.rooms {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.title-card {
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.title-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.colored-list {
+    list-style-type: disc;
+    list-style: #0088cc;
+}
+
+.colored-list li {
+
+    margin-bottom: 5px;
+}
+
+/* service section */
+.Services-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 0 20px;
+}
+
+/* read more button */
+.read-more {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* find-us section */
+
+.find-us {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px 20px;
+}
+
+.find-us-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.find-us i {
+    font-size: 30px;
+}
+
+/* footer section  */
+footer {
+    background: #000;
+    color: darkgrey;
+    font-size: 12px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 20px 40px;
+    padding: 30px;
+
+}
+
+.fa-brands {
+    font-size: 25px;
+}
+
+/* responsive for mobile and tab and desktop */
+@media (max-width: 768px) {
+    .rooms {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about .find-us {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Services-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .rooms-header span {
+
+        width: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rooms {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .about {
+
+        grid-template-columns: 1fr;
+    }
+
+    .Services-list {
+        grid-template-columns: 1fr;
+    }
+
+    .rooms-header span {
+
+        width: 100%;
+    }
+
+    .find-us {
+        grid-template-columns: 1fr;
+    }
+}
